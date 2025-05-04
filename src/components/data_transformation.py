@@ -1,5 +1,7 @@
 import sys
+import os
 from dataclasses import dataclass
+sys.path.append(os.path.abspath(r"C:\Users\ashok\Desktop\AI\MI\mlproject"))
 
 import numpy as np 
 import pandas as pd
@@ -10,9 +12,8 @@ from sklearn.preprocessing import OneHotEncoder,StandardScaler
 
 from src.exception import CustomException
 from src.logger import logging
-import os
 
-from src.utils import save_object
+from src.utils import save_object,evaluate_models
 
 @dataclass
 class DataTransformationConfig:
